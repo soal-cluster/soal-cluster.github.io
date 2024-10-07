@@ -5,4 +5,4 @@ theme: just-the-docs
 url: https://soal-cluster.github.io/
 
 aux_links: # remove if you don't want this link to appear on your pages
-  Template Repository: https://github.com/soal-cluster/soal-cluster.github.io
+  Source Repository: https://github.com/soal-cluster/soal-cluster.github.io
