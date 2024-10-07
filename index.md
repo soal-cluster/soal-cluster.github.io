@@ -3,7 +3,7 @@ title: Home
 layout: home
 ---
 
-# SOAL Cluster On-boarding
+# SOAL Cluster Onboarding
 
 ## Quick start
 
