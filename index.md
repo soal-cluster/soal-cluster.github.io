@@ -48,6 +48,13 @@ While connected to Stanford’s campus network — or connected to Stanford’s 
 
 The clusters are composed of 4 independent machines with shared storage. This means that each machine operates its own processes, but anything that is written to disk is shared across all the machines. GPUs are available on machines 10 and 11. If you’re not doing GPU-based computations, you’ll likely find that machines 8 and 9 are less burdened and more suitable for you.
 
+| Machine                | CPUs                                  | Memory       | GPUs             |
+|:-----------------------|:--------------------------------------|:-------------|:-----------------|
+| soal-8.stanford.edu    | 2x 64-core AMD EPYC 7763 @ 2.45GHz    | 1.5TB RAM    | None             |
+| soal-9.stanford.edu    | 2x 64-core AMD EPYC 7763 @ 2.45GHz    | 1.5TB RAM    | None             |
+| soal-10.stanford.edu   | 2x 64-core AMD EPYC 7763 @ 2.45GHz    | 1TB RAM      | 5x NVIDIA A6000  |
+| soal-11.stanford.edu   | 2x 64-core AMD EPYC 7763 @ 2.45GHz    | 1TB RAM      | 5x NVIDIA A6000  |
+
 ## Data storage
 
 In general, the following rules should work in determining where to put files, depending on how often files change, how hard it is to regenerate them, and how important they are.
