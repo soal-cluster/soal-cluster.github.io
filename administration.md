@@ -1,6 +1,6 @@
 ---
 title: Administration
-layout: administration
+layout: default
 ---
 
 # Cluster Policies
