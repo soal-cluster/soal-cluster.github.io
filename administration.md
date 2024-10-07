@@ -14,7 +14,7 @@ This page contains useful information for administrators of the SOAL Cluster, in
 
 Each user account has the following resource limits per cluster node: 
 
-- At most 50 CPUs being utilized, where "utilized" means 80% or more utilization.
+- At most 5,000% CPU being utilized (this is e.g. 50 CPUs being utilized at 100% each).
 - At most 250 processes running.
 - At most 70% of the node's RAM being utilized.
 - At most 70% of the node's swap memory being utilized.
