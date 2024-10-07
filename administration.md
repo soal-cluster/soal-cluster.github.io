@@ -1,11 +1,14 @@
 ---
 title: Administration
 layout: default
+nav_order: 2
 ---
 
 # Cluster Policies
 
 This page contains useful information for administrators of the SOAL Cluster, including policies for various situations and troubleshooting help.
+
+{:toc}
 
 ## Resource usage limits
 
