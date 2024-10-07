@@ -3,9 +3,10 @@ title: Home
 layout: home
 ---
 
-# SOAL cluster on-boarding
+# SOAL Cluster On-boarding
 
 ## Quick start
+
 The SOAL cluster is comprised of four high-memory, high-compute machines. Each machine has independent processors and memory, but shared storage. In other words, files that you have saved in your home directory from one machine will show up when you login on other machines, but processes/programs that you run will only be running on that specific machine. Each machine can be accessed via `ssh` and `https` (see below).
 
 All machines are shared across several research groups. Before using the cluster, please make sure you:
@@ -92,8 +93,7 @@ There are two levels of data redundancy/backup. First, the shared disks (where `
 
 The SOAL cluster has been certified to work with [high-risk data](https://uit.stanford.edu/guide/riskclassifications). However, working with such data still typically involves carrying out a [data risk assessment](https://uit.stanford.edu/security/dra) and obtaining IRB approval. If you plan to work with high-risk data on the cluster, please notify [Tim](mailto:tim.keely@stanford.edu).
 
-2.2 Python
-----------
+## Python
 
 Python 3 is available on the cluster. But note that using the system Python can be problematic; we recommend using virtual environments instead.
 
