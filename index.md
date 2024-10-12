@@ -14,7 +14,7 @@ All machines are shared across several research groups. Before using the cluster
 - Read and understand all the contents of this document.
 - Join the #cluster channel on Slack (stanfordsoal.slack.com).
 - Email Tim Keely (tim.keely@stanford.edu) for an account on the cluster.
-- Understand basic aspects of Linux usage in a shared computing environment. The SOAL cluster has many users, and using it without requisite knowledge can cause issues for other users.
+- Understand basic aspects of Linux usage in a shared computing environment. The SOAL cluster has many users, and using it without requisite knowledge can cause issues for other users. If you aren't familiar with Linux, [learn how to use Linux here](https://web.stanford.edu/group/farmshare/cgi-bin/wiki/index.php/How_to_learn_linux).
 
 The cluster is intended for SOAL-related research. Although you may also use the cluster for coursework, priority is given to research projects. Please do not use the cluster for non-Stanford-related projects (e.g., no cryptomining!). When in doubt or confused, feel free to ask questions (e.g., in `#cluster`). We are generally friendly people and try to be helpful!
 
