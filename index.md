@@ -30,9 +30,9 @@ For `ssh` access, you must be on Stanford’s VPN, even if you are connecting fr
 
 Once connected to Stanford’s VPN, connecting to the cluster is as simple as running
 
-    ssh username@soal-?.stanford.edu
+    ssh username@soal-*.stanford.edu
 
-from a terminal where `username` is your login username (your usual SUNet creds), and `?` should be replaced with a number between 8 and 11 (inclusive). (See [specs](#specs) below for more info on what machines are available.)
+from a terminal where `username` is your login username (your usual SUNet creds), and `*` should be replaced with a number between 8 and 11 (inclusive). (See [specs](#specs) below for more info on what machines are available.)
 
 Alternatively, you can connect to `soal-cluster.stanford.edu` to hit a load balancer and be redirected to the least utilized node. But beware that you need to remember which node you are on if you want to return to your processes later. Before doing anything on the command line, make sure you read through this whole document. There are important limitations and gotchas to be aware of!
 
@@ -42,7 +42,7 @@ If you are not familiar with using a Linux terminal, there are many [online tuto
 
 You can also use Rstudio and JupyterLab on the clusters through a web interface. Both are excellent tools for interactive data analysis.
 
-While connected to Stanford’s campus network — or connected to Stanford’s VPN if off campus — simply direct your browser to `https://soal-?.stanford.edu`, where `?` is a number between 8 and 11 (inclusive). You’ll see links to access Rstudio and JupyterLab on that page. Alternatively, you can connect to [https://soal-cluster.stanford.edu](https://soal-cluster.stanford.edu) to hit a load balancer, which will redirect to the least utilized node.
+While connected to Stanford’s campus network — or connected to Stanford’s VPN if off campus — simply direct your browser to `https://soal-*.stanford.edu`, where `*` is a number between 8 and 11 (inclusive). You’ll see links to access Rstudio and JupyterLab on that page. Alternatively, you can connect to [https://soal-cluster.stanford.edu](https://soal-cluster.stanford.edu) to hit a load balancer, which will redirect to the least utilized node.
 
 # Detailed description
 
@@ -64,7 +64,7 @@ In general, the following rules should work in determining where to put files, d
     ├─ scratch
     │  └─ your_id  : intermediate files; temporary things that don’t
     │                need to last more than a month.
-    │                Local to each machine (soal-?).
+    │                Local to each machine (soal-*).
     ├─ home
     │  └─ your_id  : local settings (dotfiles), code that is checked in
     │                and backed-up elsewhere (e.g., git repos)
@@ -168,14 +168,9 @@ Below we provide some generally helpful guidelines, but for a more complete manu
 
 ### Shorthand mapping
 
-You can map your own hosts, with wildcards, in an ssh config file. For example, you can create a host `soal-?` that maps to `soal-?.stanford.edu` be adding the following lines to your ssh config:
+You can map your own hosts, with wildcards, in an ssh config file. For example, you can create a host `soal-*` that maps to `soal-*.stanford.edu` be adding the following lines to your ssh config:
 
-    Host soal-?
-      HostName %h.stanford.edu
-
-and
-
-    Host soal-??
+    Host soal-*
       HostName %h.stanford.edu
 
 Then, instead of
@@ -188,15 +183,15 @@ you can connect to the cluster with
 
 ### Authentication
 
-For each host, you can set the default `user`. This will save you from having to type in your SUNet ID every time. For example, you can add your user ID to the `soal-?` host as follows:
+For each host, you can set the default `user`. This will save you from having to type in your SUNet ID every time. For example, you can add your user ID to the `soal-*` host as follows:
 
-    Host soal-?
+    Host soal-*
       HostName %h.stanford.edu
       user your_SUNetID_here
 
 If you have set up an [ssh key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) on the cluster, you can specify the identity file in your ssh config file as well.
 
-    Host soal-?
+    Host soal-*
       HostName %h.stanford.edu
       user your_SUNetID_here
       IdentityFile ~/.ssh/id_rsa
