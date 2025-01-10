@@ -26,7 +26,9 @@ These limits will be enforced via the following policy (TBD):
 2. If there's a resource overusage twice in a row, send an email to the user and the user's PI, and send a message in #cluster to the user.
 3. If resource overusage is still occurring after 16 hours without any communcation from the user indicating that steps are being taken towards resolving the overusage, the user's processes will be killed.
 
-Users should be careful to use the cluster in a thoughtful manner, especially around conference deadlines.
+Users should be careful to use the cluster in a thoughtful manner, especially around conference deadlines. 
+
+SOAL administrators may occasionally relax or tighten these usage limits depending on overall load and seasonal usage patterns, among other things.
 
 ## Onboarding agreement
 
