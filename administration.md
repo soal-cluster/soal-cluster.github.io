@@ -16,14 +16,15 @@ Each user account has the following resource limits per cluster node:
 
 - At most 5,000% CPU being utilized (this is e.g. 50 CPUs being utilized at 100% each).
 - At most 250 processes running.
-- At most 70% of the node's RAM being utilized.
-- At most 70% of the node's swap memory being utilized.
+- At most 60% of the RAM being utilized.
+- At most 60% of the swap memory being utilized.
+- At most 40% of the total GPU memory being utilized.
 
 These limits will be enforced via the following policy (TBD):
 
-1. Run a cron job or check via the Hall Monitor script at a reasonable frequency (e.g. at least every 10 minutes and not more than every 30 minutes) to tabulate resource usage per user.
+1. Run a cron job or check via the Hall Monitor script at a reasonable frequency (e.g. at most every 10 minutes and not less than every 60 minutes) to tabulate resource usage per user.
 2. If there's a resource overusage twice in a row, send an email to the user and the user's PI, and send a message in #cluster to the user.
-3. If resource overusage is still occurring after 12 hours without any communcation from the user indicating that steps are being taken towards resolving the overusage, the user's processes will be killed.
+3. If resource overusage is still occurring after 16 hours without any communcation from the user indicating that steps are being taken towards resolving the overusage, the user's processes will be killed.
 
 Users should be careful to use the cluster in a thoughtful manner, especially around conference deadlines.
 
