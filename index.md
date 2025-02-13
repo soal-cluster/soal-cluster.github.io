@@ -189,14 +189,14 @@ For each host, you can set the default `user`. This will save you from having to
       HostName %h.stanford.edu
       user your_SUNetID_here
 
-If you have set up an [ssh key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) on the cluster, you can specify the identity file in your ssh config file as well.
+If at some point key-based authentication is allowed on SOAL, and you have set up an [ssh key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) on the cluster, you can specify the identity file in your ssh config file as well.
 
     Host soal-*
       HostName %h.stanford.edu
       user your_SUNetID_here
       IdentityFile ~/.ssh/id_rsa
 
-After setting up your key, contact [Tim Keely](mailto:tim.keely@stanford.edu) to activate key-based access.
+For now, however, key-based authentication is not allowed on SOAL.
 
 ### Port forwarding
 
